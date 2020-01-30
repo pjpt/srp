@@ -71,10 +71,15 @@ header a.active, header a:hover {
 }
 
 @media screen and (max-width: 850px) {
+    header {
+        position: sticky;
+    }
+    
     label.logo {
         font-size: 30px;
         padding-left: 50px;
     }
+    
     .checkbtn {
         display: block;
     }
