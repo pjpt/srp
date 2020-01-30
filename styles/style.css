@@ -70,7 +70,7 @@ header a.active, header a:hover {
     display: none;
 }
 
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
     label.logo {
         font-size: 30px;
         padding-left: 50px;
