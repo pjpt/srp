@@ -1,0 +1,137 @@
+.sec {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.sec h1 {
+    font-size: 2em;
+    color: #666666;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.box {
+    display: inline-block;
+    background-color: #e0e0e0;
+    background-image: url('../image/event-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    width: 100%;
+    padding-top: 100%;
+    box-shadow: 3px 3px 3px #888888;
+}
+
+.event-name {
+    background-color: #666666;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.event-name h2 {
+    line-height: 50px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.event-name a {
+    color: white;
+}
+
+.event-name:hover {
+    background: black;
+}
+
+@media screen and (max-width: 680px) {
+    .box {
+        width: 100%;
+        padding-top: 100%;
+        box-shadow: 2px 2px 2px #888888;
+    }
+}
+
+.event-head {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.event-head h1 {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.reg-info {
+    background-color: #dddddd;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.reg-info h2 {
+    padding-bottom: 10px;
+}
+
+.reg-info h3 {
+    display: inline;
+    font-size: 1.5em;
+    padding-left: 20px;
+}
+
+.register {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: white;
+    border: 3px solid;
+}
+
+.register a {
+    color: black;
+}
+
+.incharge {
+    margin: 30px auto;
+    background-color: #dddddd;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.semi-container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.incharge-name {
+    padding-bottom: 8px;
+    font-size: 1.2em;
+}
+
+.content {
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 620px) {
+    .semi-container {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
