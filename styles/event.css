@@ -1,15 +1,3 @@
-.sec {
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 100px;
-}
-
-.sec h1 {
-    font-size: 2em;
-    color: #666666;
-    padding-top: 80px;
-    padding-bottom: 40px;
-}
 
 .events-container {
     display: grid;
@@ -27,7 +15,7 @@
     border-radius: 10px;
     width: 100%;
     padding-top: 100%;
-    box-shadow: 3px 3px 3px #888888;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .event-name {
@@ -133,5 +121,9 @@
         margin-top: 20px;
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+
+    .event-head {
+        width: 90%;
     }
 }

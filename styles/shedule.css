@@ -1,0 +1,53 @@
+.table {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin: 1rem 0;
+    padding-left: 1em;
+}
+
+.row:first-child {
+    border: none;
+    margin-bottom: 0;
+}
+
+.column {
+    width: 100%;
+    line-height: 4.5em;
+    font-size: 1.1em;
+}
+
+.column-head {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .column-head {
+        display: none;
+    }
+
+    .column:first-child {
+        font-weight: bold;
+    }
+    
+    .column:nth-child(3) {
+        display: none;
+    }
+
+    .column {
+        line-height: 2.3em;
+    }
+}

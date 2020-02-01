@@ -11,6 +11,7 @@ header {
     position: fixed;
     width: 100%;
     box-shadow: 0px 0px 10px 0px;
+    z-index: 3;
 }
 
 .fix {
@@ -128,6 +129,20 @@ footer {
     color: black;
 }
 
+.sec {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.sec h1 {
+    font-size: 2em;
+    color: #666666;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+}
+
 @media screen and (max-width: 850px) {
     header {
         position: sticky;
@@ -182,5 +197,9 @@ footer {
 
     main {
         padding-top: 0px;
+    }
+    
+    .sec {
+        width: 90%;
     }
 }
