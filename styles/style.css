@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -10,8 +11,10 @@
 header {
     position: fixed;
     width: 100%;
-    box-shadow: 0px 0px 10px 0px;
+    box-shadow: 0px 3px 20px 0 rgba(0, 0, 0, .15), 0 2px 5px 0 rgba(0, 0, 0, .10);
     z-index: 3;
+    line-height: 80px;
+    transition: all .5s ease;
 }
 
 .fix {
@@ -24,26 +27,24 @@ body {
 
 header nav {
     background: #ffffff;
-    height: 80px;
     width: 100%;
 }
 
 label.logo{
     color: #000000;
     font-size: 35px;
-    line-height: 80px;
+    line-height: inherit;
     padding: 0 100px;
     font-weight: bold;
 }
 
 header nav ul {
     float: right;
-    margin-right: 20px;
 }
 
 header nav ul li {
     display: inline-block;
-    line-height: 80px;
+    line-height: inherit;
     margin: 0 5px;
 }
 
@@ -56,8 +57,7 @@ header nav ul li a {
 }
 
 header a.active, header a:hover {
-    background: #dddddd;
-    transition: .5s ease;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .checkbtn{
@@ -80,7 +80,7 @@ header a.active, header a:hover {
 }
 
 main {
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 footer {
@@ -143,11 +143,40 @@ footer {
     text-transform: uppercase;
 }
 
+.ticket-button {
+    margin: 0;
+    background-color: #2962FF;
+    padding: 0 20px
+}
+
+.ticket-button a {
+    font-weight: bold;
+    color: white;
+}
+
+.ticket-button a:hover {
+    background: inherit;
+}
+
 @media screen and (max-width: 850px) {
     header {
         position: sticky;
     }
     
+    .ticket-button {
+        background-color: inherit;
+        color: #2962FF;
+    }
+
+    .ticket-button a {
+        color: #2962FF;
+    }
+
+    .ticket-button a:hover {
+        background-color: #dddddd;
+        color: #2962FF;
+    }
+
     label.logo {
         font-size: 30px;
         padding-left: 50px;
@@ -189,6 +218,7 @@ footer {
     #check:checked ~ header {
         position: sticky;
     }
+    
     .container {
         display: grid;
         grid-template-columns: 1fr;
