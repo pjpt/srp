@@ -20,11 +20,12 @@ main {
     width: 100%;
     padding-top: 100%;
     cursor: pointer;
+    transition: all .3s ease;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .event-name {
-    background-color: #666666;
+    backdrop-filter: brightness(60%);
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
     transition: all .5s ease;
@@ -38,6 +39,9 @@ main {
 
 .event-name a {
     color: white;
+}
+
+.box:hover {
 }
 
 .box:hover .event-name {
