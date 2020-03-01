@@ -8,7 +8,7 @@
     height: 100%;
     display: flex;
     flex-direction: row;
-    background-color: black;
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
     /*background: url('../image/main-background.svg');*/
     background-attachment: fixed;
 }
