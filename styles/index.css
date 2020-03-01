@@ -1,24 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
+
+.head {
+    height: 100%;
+}
 .head-container {
     width: 100%;
     height: 100%;
-    background: url('../image/main-background.svg');
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    /*background: url('../image/main-background.svg');*/
     background-attachment: fixed;
 }
 
 .web-title {
-    margin: 10%;
+    
+    margin: 7%;
+    margin-top: 3%;
     display: inline-block;
-    background-color: white;
-    padding: 2em;
-    box-shadow: 0px 0px 2px rgba(0,0,0,.3);
-    width: 450px;
+    /*background-color: white;*/
+    /*box-shadow: 0px 0px 2px rgba(0,0,0,.3);*/
+    width: 50%;
     transition: box-shadow .2s ease-in-out;
 }
-
+/*
 .web-title:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, .25);
 }
-
+*/
 .web-title h1 {
     display: inline-block;
     font-size: 5rem;
@@ -28,9 +37,13 @@
 }
 
 .web-title p {
-    font-size: 1.1em;
-    color: #555555;
-    text-align: justify;
+    font-family: 'Julius Sans One';
+    font-style: italic;
+    line-height: 1.5em;
+    padding-top: 2em;
+    font-size: 2.2em;
+    color: white;
+    text-align: center;
 }
 
 @media screen and (max-width: 1100px) {
@@ -84,7 +97,22 @@
     width: 70%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
+    .head-container {
+        flex-direction: column;
+    }
+
+    .web-title {
+        margin: 0 auto;
+    }
+    .web-title p {
+        font-size: 1.7em;
+    }
+
+    .head {
+        height: 200%;
+    }
+
     .slider-main {
         width: 100%;
     }
@@ -100,4 +128,13 @@
     .about .para {
         width: 90%;
     }
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-in {
+    animation: fade-in 1s forwards linear;
 }

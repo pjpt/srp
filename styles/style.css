@@ -158,7 +158,7 @@ footer {
     background: inherit;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
     header {
         position: sticky;
     }
