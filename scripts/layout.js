@@ -23,17 +23,82 @@ $(window).scroll(function() {
     }
 });
 
-var desc = document.getElementById('desc');
-var line = "Borrowing its vibrance from the greatest depths of human imagination, the VIBRANT threatens to captivate anyone lay eyes upon it. From the darkest pit of hellish horrors to the dearthless bounties of the high heavens, join us as we unveil it all in our fest.";
-var word_list = line.split(' ');
+if (main == true) {
+    var desc = document.getElementById('desc');
+    var line = "Borrowing its vibrance from the greatest depths of human imagination, the VIBRANT threatens to captivate anyone lay eyes upon it. From the darkest pit of hellish horrors to the dearthless bounties of the high heavens, join us as we unveil it all in our fest.";
+    var word_list = line.split(' ');
 
-var time = .5;
-for (var i = 0; i < word_list.length; i++) {
-    var span = document.createElement('span');
-    span.style.animationDelay = time + "s";    
-    span.style.opacity = "0";
-    span.className = 'fade-in';
-    span.innerText = word_list[i] + ' ';
-    desc.appendChild(span);
-    time += word_list[i].length/30;
+    var time = .5;
+    for (var i = 0; i < word_list.length; i++) {
+        var span = document.createElement('span');
+        span.style.animationDelay = time + "s";    
+        span.style.opacity = "0";
+        span.className = 'fade-in';
+        span.innerText = word_list[i] + ' ';
+        desc.appendChild(span);
+        time += word_list[i].length/30;
+    }
+}
+
+if (vibcon == true) {
+    checkA.addEventListener('change', () => {
+        var coll = document.getElementById('collapsible1');
+        if (checkA.checked) {
+            coll.style.display = 'block';
+            console.log(1);
+        } else {
+            coll.style.display = 'none';
+            console.log(0);
+        }
+    });
+    checkB.addEventListener('change', () => {
+        var coll = document.getElementById('collapsible2');
+        if (checkB.checked) {
+            coll.style.display = 'block';
+            console.log(1);
+        } else {
+            coll.style.display = 'none';
+            console.log(0);
+        }
+    });
+    checkC.addEventListener('change', () => {
+        var coll = document.getElementById('collapsible3');
+        if (checkC.checked) {
+            coll.style.display = 'block';
+            console.log(1);
+        } else {
+            coll.style.display = 'none';
+            console.log(0);
+        }
+    });
+    checkD.addEventListener('change', () => {
+        var coll = document.getElementById('collapsible4');
+        if (checkD.checked) {
+            coll.style.display = 'block';
+            console.log(1);
+        } else {
+            coll.style.display = 'none';
+            console.log(0);
+        }
+    });
+    checkE.addEventListener('change', () => {
+        var coll = document.getElementById('collapsible5');
+        if (checkE.checked) {
+            coll.style.display = 'block';
+            console.log(1);
+        } else {
+            coll.style.display = 'none';
+            console.log(0);
+        }
+    });
+    checkF.addEventListener('change', () => {
+        var coll = document.getElementById('collapsible6');
+        if (checkF.checked) {
+            coll.style.display = 'block';
+            console.log(1);
+        } else {
+            coll.style.display = 'none';
+            console.log(0);
+        }
+    });
 }

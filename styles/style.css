@@ -62,7 +62,7 @@ header a.active, header a:hover {
 
 .checkbtn{
     font-size: 30px;
-    color: black;
+    color: white;
     float: right;
     margin-top: 20px;
     margin-right: 40px;
@@ -145,7 +145,7 @@ footer {
 
 .ticket-button {
     margin: 0;
-    background-color: #2962FF;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
     padding: 0 20px
 }
 
@@ -155,7 +155,7 @@ footer {
 }
 
 .ticket-button a:hover {
-    background: inherit;
+    background: transparent;
 }
 
 @media screen and (max-width: 1000px) {
