@@ -164,7 +164,7 @@ footer {
     }
     
     .ticket-button {
-        background-color: inherit;
+        background: black;
         color: #2962FF;
     }
 
@@ -173,7 +173,6 @@ footer {
     }
 
     .ticket-button a:hover {
-        background-color: #dddddd;
         color: #2962FF;
     }
 
@@ -189,7 +188,7 @@ footer {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #eeeeee;
+        background: black;
         top: 80px;
         left: 0;
         text-align: center;
