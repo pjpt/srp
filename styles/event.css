@@ -59,6 +59,7 @@ main {
 .event-head {
     width: 80%;
     margin: 0 auto;
+    padding-top: 60px;
 }
 
 .event-head h1 {

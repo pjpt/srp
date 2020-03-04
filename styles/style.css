@@ -79,10 +79,6 @@ header a.active, header a:hover {
     grid-auto-rows: 400px;
 }
 
-main {
-    padding-top: 60px;
-}
-
 footer {
     background: #ededed;
 }

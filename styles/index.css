@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
 
 .head {
+    padding-top: 60px;
     height: 100%;
 }
 
@@ -71,6 +72,10 @@
     padding-top: 2em;
 }
 
+.slider-nav div {
+    background-color: burlywood;
+}
+
 .slider-nav h3 {
     line-height: 150px;
     background: white;
@@ -89,12 +94,32 @@
     text-transform: uppercase;
 }
 
-.about {
-    height: 500px;
-}
-
 .about .para {
     width: 70%;
+}
+
+.semi-head h1 {
+    font-size: 1.7em;
+}
+
+.semi-head a {
+    color: #335476;
+}
+.semi-head a:visited {
+    color: #335476;
+}
+
+.semi-head h3 {
+    font-weight: normal;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 3px;
+    border: 0 solid;
+    background-color: black;
 }
 
 @media screen and (max-width: 1000px) {
@@ -117,15 +142,15 @@
         width: 100%;
     }
 
-    .about {
-        height: 600px;
-    }
-
     .about p {
         font-size: 0.9em;
     }
 
     .about .para {
+        width: 90%;
+    }
+
+    hr {
         width: 90%;
     }
 }
