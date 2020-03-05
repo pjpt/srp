@@ -17,6 +17,9 @@
     display: none;
 }
 
+.category {
+    margin-bottom: 20px;
+}
 .plus_button {
     float: right;
     cursor: pointer;
@@ -32,6 +35,21 @@
 
 .content ul, .sec ul {
     margin: 2em;
+}
+
+@media screen and (max-width: 1000px) {
+    .content ul, .sec ul {
+        margin: 0;
+        margin-top: 2em;
+    }
+
+    .content ul li, .sec ul li {
+        margin-left: 0;
+    }
+    
+    .category {
+        font-size: 1.3em;
+    }
 }
 
 .content ul li, .sec ul li {

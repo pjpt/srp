@@ -129,6 +129,7 @@ footer {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 100px;
+    padding-top: 60px;
 }
 
 .sec h1 {
@@ -225,6 +226,11 @@ footer {
     }
     
     .sec {
+        padding-top: 0;
         width: 90%;
+    }
+    
+    .sec h1 {
+        padding-top: 40px;
     }
 }

@@ -70,3 +70,24 @@
     text-transform: uppercase;
     border-bottom: 2px solid crimson;
 }
+
+@media screen and (max-width: 500px) {
+    .team-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .name-box {
+        font-size: .9em;
+        padding-left: .5rem;
+    }
+
+    .role {
+        font-size: .8em;
+        padding-left: .5rem;
+    }
+
+    .box {
+        height: 200px;
+    }
+}

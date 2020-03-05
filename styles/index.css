@@ -135,6 +135,7 @@ hr {
     }
 
     .head {
+        padding-top: 0;
         height: 200%;
     }
 

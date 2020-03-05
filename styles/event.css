@@ -148,6 +148,7 @@ main {
     }
 
     .event-head {
+        padding-top: 0;
         width: 90%;
     }
 }
