@@ -7,7 +7,6 @@
 
 .main-box {
     background-color: #f8f8f8;
-    background-image: url('../image/team.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -20,7 +19,6 @@
 
 .box {
     background-color: #f8f8f8;
-    background-image: url('../image/person2.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

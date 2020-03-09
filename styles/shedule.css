@@ -9,7 +9,7 @@
     justify-content: center;
     border: 1px solid #dddddd;
     border-radius: 5px;
-    margin: 1rem 0;
+    margin: .5rem 0;
     padding-left: 1em;
 }
 
@@ -20,7 +20,7 @@
 
 .column {
     width: 100%;
-    line-height: 4.5em;
+    line-height: 3em;
     font-size: 1.1em;
 }
 

@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Chela+One&display=swap');
+@import url("https://use.typekit.net/ouy6eeh.css");
 
 .events-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-    
     justify-items: center;
 }
 
@@ -27,10 +26,11 @@
 }
 
 .event-name h2 {
-    font-family: 'Chela One', cursive;
+    font-family: sniglet, sans-serif;
     font-size: 3em;
     text-align: center;
-    font-weight: normal;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .event-name a {
@@ -66,6 +66,7 @@
 .event-head p {
     font-size: 1.4em;
 }
+
 .time {
     font-weight: normal;
     margin-bottom: 20px;
@@ -138,19 +139,6 @@
     margin-bottom: 50px;
 }
 
-@media screen and (max-width: 620px) {
-    .semi-container {
-        margin-top: 20px;
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .event-head {
-        padding-top: 0;
-        width: 90%;
-    }
-}
-
 .map {
     width: 100%;
     height: 300px;
@@ -180,4 +168,37 @@
 
 .h {
     list-style-type: none;
+}
+
+@media screen and (max-width: 620px) {
+    .semi-container {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .event-head {
+        padding-top: 0;
+        width: 90%;
+    }
+
+    .time {
+        font-size: 1.1em;
+    }
+
+    .list h2 {
+        font-size: 1.5em;
+    }
+
+    .list li {
+        font-size: 1.1em;
+    }
+
+    .incharge br {
+        line-height: 0;
+    }
+
+    .event-head h1 {
+        font-size: 2em;
+    }
 }
