@@ -1,3 +1,8 @@
+body {
+	background-image: url('/home/k/Downloads/Trianglify-10s-1553px.svg');
+	background-position: fixed;
+}
+
 #collapsible1 {
     display: none;
 }

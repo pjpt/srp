@@ -1,58 +1,52 @@
-
-main {
-    background-position: fixed;
-}
+@import url('https://fonts.googleapis.com/css?family=Chela+One&display=swap');
 
 .events-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    
     justify-items: center;
 }
 
 .box {
     display: inline-block;
-    background-color: #e0e0e0;
+/*    background-color: #e0e0e0;
     background-image: url('../image/event-logo.png');
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    width: 100%;
-    padding-top: 100%;
+*/  width: 100%;
     cursor: pointer;
     transition: all .3s ease;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+/*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+*/}
 
 .event-name {
-    backdrop-filter: brightness(60%);
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
+    padding: 1em;
     transition: all .5s ease;
+    height: 100%;
 }
 
 .event-name h2 {
-    line-height: 50px;
+    font-family: 'Chela One', cursive;
+    font-size: 3em;
     text-align: center;
     font-weight: normal;
 }
 
 .event-name a {
-    color: white;
+    color: black;
 }
 
 .box:hover {
 }
 
 .box:hover .event-name {
-    background: black;
+    background: rgba(0, 0, 0 , .1);
 }
 
 @media screen and (max-width: 680px) {
     .box {
         width: 100%;
-        padding-top: 100%;
-        box-shadow: 2px 2px 2px #888888;
     }
 }
 
@@ -69,10 +63,14 @@ main {
     padding-bottom: 50px;
 }
 
+.event-head p {
+    font-size: 1.4em;
+}
 .time {
     font-weight: normal;
     margin-bottom: 20px;
     color: #1967d2;
+    font-size: 1.5em;
 }
 
 .dot {
@@ -161,6 +159,7 @@ main {
 }
 
 .category {
+    font-size: 1.6em;
     margin-top: 30px;
     margin-bottom: 40px;
     color: #888888;
@@ -168,4 +167,17 @@ main {
     padding-bottom: 10px;
     text-transform: uppercase;
     border-bottom: 2px solid crimson;
+}
+
+.list h2 {
+    font-size: 1.7em;
+}
+.list li {
+    margin-left: 2em;
+    font-size: 1.4em;
+    list-style-type: disc;
+}
+
+.h {
+    list-style-type: none;
 }

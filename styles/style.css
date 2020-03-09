@@ -11,7 +11,6 @@
 header {
     position: fixed;
     width: 100%;
-    box-shadow: 0px 3px 20px 0 rgba(0, 0, 0, .15), 0 2px 5px 0 rgba(0, 0, 0, .10);
     z-index: 3;
     line-height: 80px;
     transition: all .5s ease;
@@ -26,6 +25,7 @@ body {
 }
 
 header nav {
+    box-shadow: 0px 3px 20px 0 rgba(0, 0, 0, .15), 0 2px 5px 0 rgba(0, 0, 0, .10);
     background: black;
     width: 100%;
 }

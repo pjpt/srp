@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles/style.css">
         <link rel="stylesheet" href="../styles/event.css">
+        <link rel="stylesheet" href="../styles/vibcon.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
     <body>
@@ -28,8 +30,8 @@
         <main>
             <section class="sec" style="padding-top: 60px;">
                 <h1>Events</h1>
-                <h2 class="category">Music & Dance</h2>
-                <div class="events-container">
+                <h2 class="category">Cultural<input type="checkbox" id="checkA" style="display: none;"><label for="checkA" class="plus_button">+</label></h2>
+                <div class="events-container" id="collapsible1">
                     <div class="box" onclick="document.location='event1.html'">
                         <div class="event-name">
                             <h2><a href="event1.html">Vocal</a></h2>
@@ -46,162 +48,188 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="category">Fine arts</h2>
-                <div class="events-container">
-                    <div class="box" onclick="document.location='event1.html'">
+                <h2 class="category">Literature<input type="checkbox" id="checkB" style="display: none;"><label for="checkB" class="plus_button">+</label></h2>
+                <div class="events-container" id="collapsible2">
+                    <div class="box" onclick="document.location='englishDeb.html'">
                         <div class="event-name">
-                            <h2><a href="event1.html">Pot decoration</a></h2>
+                            <h2><a href="englishDeb.html">English Debate</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='event1.html'">
+                    <div class="box" onclick="document.location='GujDeb.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">T shirt</a></h2>
+                            <h2><a href="GujDeb.html">Gujarati Debate</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='event1.html'">
+                    <div class="box" onclick="document.location='GujExt.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Finger painting</a></h2>
+                            <h2><a href="GujExt.html">Gujarati Extempore</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='event1.html'">
+                    <div class="box" onclick="document.location='MUN.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Rangoli</a></h2>
-                        </div>
-                    </div>
-                    <div class="box" onclick="document.location='event1.html'">
-                        <div class="event-name">
-                            <h2><a href="event2.html">Pebble painting</a></h2>
-                        </div>
-                    </div>
-                    <div class="box" onclick="document.location='event1.html'">
-                        <div class="event-name">
-                            <h2><a href="event2.html">Clay modelling</a></h2>
-                        </div>
-                    </div>
-                    <div class="box" onclick="document.location='event1.html'">
-                        <div class="event-name">
-                            <h2><a href="event2.html">Collage making</a></h2>
-                        </div>
-                    </div>
-                </div>
-                <h2 class="category">Literature</h2>
-                <div class="events-container">
-                    <div class="box" onclick="document.location='oxford.html'">
-                        <div class="event-name">
-                            <h2><a href="event1.html">Oxford Style Debate</a></h2>
-                        </div>
-                    </div>
-                    <div class="box" onclick="document.location='event1.html'">
-                        <div class="event-name">
-                            <h2><a href="event2.html">Parliamentary Debate</a></h2>
-                        </div>
-                    </div>
-                    <div class="box" onclick="document.location='essay.html'">
-                        <div class="event-name">
-                            <h2><a href="event2.html">Essay Writing</a></h2>
+                            <h2><a href="MUN.html">MUN</a></h2>
                         </div>
                     </div>
                     <div class="box" onclick="document.location='poetry.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Poetry Writing</a></h2>
+                            <h2><a href="poetry.html">Poetry Writing</a></h2>
                         </div>
                     </div>
                     <div class="box" onclick="document.location='trivia.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Trivia quiz</a></h2>
+                            <h2><a href="trivia.html">Fandom Trivia Quiz</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='ad.html'">
+                    <div class="box" onclick="document.location='essay.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Ad Presentation</a></h2>
-                        </div>
-                    </div>
-                    <div class="box" onclick="document.location='plot.html'">
-                        <div class="event-name">
-                            <h2><a href="event2.html">Plot Twist</a></h2>
+                            <h2><a href="essay.html">Essay writing</a></h2>
                         </div>
                     </div>
                     <div class="box" onclick="document.location='mic.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Open mic</a></h2>
+                            <h2><a href="mic.html">Open mic</a></h2>
+                        </div>
+                    </div>
+                    <div class="box" onclick="document.location='ad.html'">
+                        <div class="event-name">
+                            <h2><a href="ad.html">Advertisement Presentation</a></h2>
                         </div>
                     </div>
                 </div>
-                <h2 class="category">informals</h2>
-                <div class="events-container">
+                <h2 class="category">Fine arts<input type="checkbox" id="checkC" style="display: none;"><label for="checkC" class="plus_button">+</label></h2>
+                <div class="events-container" id="collapsible3">
                     <div class="box" onclick="document.location='event1.html'">
                         <div class="event-name">
-                            <h2><a href="event1.html">Tug of war</a></h2>
+                            <h2><a href="pot.html">Pot decoration</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='event1.html'">
+                    <div class="box" onclick="document.location='t.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Beertactoe</a></h2>
+                            <h2><a href="tshirt.html">T-shirt Painting</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='event1.html'">
+                    <div class="box" onclick="document.location='PosterMaking.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Escape room</a></h2>
+                            <h2><a href="PosterMaking.html">Poster Making</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='event1.html'">
+                    <div class="box" onclick="document.location='FingerPainting.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Treasure hunt</a></h2>
+                            <h2><a href="FingerPainting.html">Finger Painting</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='event1.html'">
+                    <div class="box" onclick="document.location='Rangoli.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Dumb Charades</a></h2>
+                            <h2><a href="Rangoli.html">Rangoli</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='event1.html'">
+                    <div class="box" onclick="document.location='PebblePainting.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Pictionary</a></h2>
+                            <h2><a href="PebblePainting.html">Pebble Painting</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='event1.html'">
+                    <div class="box" onclick="document.location='ClayModelling.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Whisper Challenge</a></h2>
+                            <h2><a href="ClayModelling.html">Clay Modelling</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='event1.html'">
+                    <div class="box" onclick="document.location='collagemaking_temp.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Meme making challenge</a></h2>
+                            <h2><a href="collagemaking_temp.html">Collage Making</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='event1.html'">
+                </div>
+                <h2 class="category">SPORTS<input type="checkbox" id="checkD" style="display: none;"><label for="checkD" class="plus_button">+</label></h2>
+                <div class="events-container" id="collapsible4">
+                    <div class="box" onclick="document.location='Badminton_temp.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Password</a></h2>
+                            <h2><a href="Badminton_temp.html">Badminton</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='event1.html'">
+                    <div class="box" onclick="document.location='volleyball.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Snake & Ladders</a></h2>
+                            <h2><a href="volleyball.html">Volleyball</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='event1.html'">
+                    <div class="box" onclick="document.location='Chess_temp.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Paper Dance</a></h2>
+                            <h2><a href="Chess_temp.html">Chess</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='event1.html'">
+                    <div class="box" onclick="document.location='Carrom_temp.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Antarakhsri</a></h2>
+                            <h2><a href="Carrom_temp.html">Carrom</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='event1.html'">
+                    <div class="box" onclick="document.location='TableTennis_temp.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Spanghtti tin challenge</a></h2>
+                            <h2><a href="TableTennis_temp.html">Table Tennis</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='event1.html'">
+                    <div class="box" onclick="document.location='cricket.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">3 limbs challenge</a></h2>
+                            <h2><a href="cricket.html">Cricket</a></h2>
                         </div>
                     </div>
-                    <div class="box" onclick="document.location='event1.html'">
+                    <div class="box" onclick="document.location='athletics.html'">
                         <div class="event-name">
-                            <h2><a href="event2.html">Boys saree</a></h2>
+                            <h2><a href="athletics.html">Athletics</a></h2>
+                        </div>
+                    </div>
+                    <div class="box" onclick="document.location='kabaddi.html'">
+                        <div class="event-name">
+                            <h2><a href="kabaddi.html">Kabaddi</a></h2>
+                        </div>
+                    </div>
+                    <div class="box" onclick="document.location='basketball.html'">
+                        <div class="event-name">
+                            <h2><a href="basketball.html">Basketball</a></h2>
+                        </div>
+                    </div>
+                    <div class="box" onclick="document.location='football.html'">
+                        <div class="event-name">
+                            <h2><a href="football.html">Football</a></h2>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="category">E-Gaming<input type="checkbox" id="checkE" style="display: none;"><label for="checkE" class="plus_button">+</label></h2>
+                <div class="events-container" id="collapsible5">
+                    <div class="box" onclick="document.location='PUBG.html'">
+                        <div class="event-name">
+                            <h2><a href="PUBG.html">PUBG Mobile</a></h2>
+                        </div>
+                    </div>
+                    <div class="box" onclick="document.location='COD.html'">
+                        <div class="event-name">
+                            <h2><a href="COD.html">Call of Duty Mobile</a></h2>
+                        </div>
+                    </div>
+                    <div class="box" onclick="document.location='ClashRoyale.html'">
+                        <div class="event-name">
+                            <h2><a href="ClashRoyale.html">Clash Royale</a></h2>
+                        </div>
+                    </div>
+                    <div class="box" onclick="document.location='CSGO.html'">
+                        <div class="event-name">
+                            <h2><a href="CSGO.html">CSGO PC</a></h2>
+                        </div>
+                    </div>
+                    <div class="box" onclick="document.location='FIFA.html'">
+                        <div class="event-name">
+                            <h2><a href="FIFA.html">FIFA PS4</a></h2>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="category">Drama<input type="checkbox" id="checkF" style="display: none;"><label for="checkF" class="plus_button">+</label></h2>
+                <div class="events-container" id="collapsible6">
+                    <div class="box" onclick="document.location='short_play.html'">
+                        <div class="event-name">
+                            <h2><a href="short_play.html">PARACOSM</a></h2>
+                        </div>
+                    </div>
+                    <div class="box" onclick="document.location='twistFilm.html'">
+                        <div class="event-name">
+                            <h2><a href="twistFilm.html">FARRAGO</a></h2>
                         </div>
                     </div>
                 </div>
@@ -217,7 +245,7 @@
                     <ul>
                         <li>
                             <span class="tag"><i class="fas fa-envelope"></i></span>
-                            <span class="value"><a href="#">abd@def.com</a></span>
+                            <span class="value"><a href="#">vibrant.medicalcollegebaroda@gmail.com</a></span>
                         </li>
                         <li>
                             <span class="tag"><i class="fas fa-map-marker-alt"></i></span> 
@@ -247,8 +275,9 @@
                 </div>
             </div>
         </footer>
+        <script>var vibcon = false; var main = false; event = true;</script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="../scripts/layout.js"></script>
-
+        <script src="../scripts/layout.js"></script>
     </body>
 </html>

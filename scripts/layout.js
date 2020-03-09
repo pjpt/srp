@@ -10,9 +10,9 @@ check.addEventListener('change', () => {
     }
 });
 
-
 $(window).scroll(function() {
     var header = document.getElementsByTagName('header')[0];
+    var nav = header.getElementsByTagName('nav')[0];
     var check = document.getElementById('check');
     if (check.checked === false) {
         if ($(this).scrollTop() > 50) {
@@ -45,60 +45,124 @@ if (vibcon == true) {
         var coll = document.getElementById('collapsible1');
         if (checkA.checked) {
             coll.style.display = 'block';
-            console.log(1);
+
         } else {
             coll.style.display = 'none';
-            console.log(0);
+            
         }
     });
     checkB.addEventListener('change', () => {
         var coll = document.getElementById('collapsible2');
         if (checkB.checked) {
             coll.style.display = 'block';
-            console.log(1);
+
         } else {
             coll.style.display = 'none';
-            console.log(0);
+            
         }
     });
     checkC.addEventListener('change', () => {
         var coll = document.getElementById('collapsible3');
         if (checkC.checked) {
             coll.style.display = 'block';
-            console.log(1);
+
         } else {
             coll.style.display = 'none';
-            console.log(0);
+            
         }
     });
     checkD.addEventListener('change', () => {
         var coll = document.getElementById('collapsible4');
         if (checkD.checked) {
             coll.style.display = 'block';
-            console.log(1);
+
         } else {
             coll.style.display = 'none';
-            console.log(0);
+            
         }
     });
     checkE.addEventListener('change', () => {
         var coll = document.getElementById('collapsible5');
         if (checkE.checked) {
             coll.style.display = 'block';
-            console.log(1);
+
         } else {
             coll.style.display = 'none';
-            console.log(0);
+            
         }
     });
     checkF.addEventListener('change', () => {
         var coll = document.getElementById('collapsible6');
         if (checkF.checked) {
             coll.style.display = 'block';
-            console.log(1);
+
         } else {
             coll.style.display = 'none';
-            console.log(0);
+            
+        }
+    });
+}
+
+if (event == true) {
+    checkA.addEventListener('change', () => {
+        console.log('hi');
+        var coll = document.getElementById('collapsible1');
+        if (checkA.checked) {
+            coll.style.display = 'grid';
+
+        } else {
+            coll.style.display = 'none';
+            
+        }
+    });
+    checkB.addEventListener('change', () => {
+        var coll = document.getElementById('collapsible2');
+        if (checkB.checked) {
+            coll.style.display = 'grid';
+            
+        } else {
+            coll.style.display = 'none';
+            
+        }
+    });
+    checkC.addEventListener('change', () => {
+        var coll = document.getElementById('collapsible3');
+        if (checkC.checked) {
+            coll.style.display = 'grid';
+            
+        } else {
+            coll.style.display = 'none';
+            
+        }
+    });
+    checkD.addEventListener('change', () => {
+        var coll = document.getElementById('collapsible4');
+        if (checkD.checked) {
+            coll.style.display = 'grid';
+            
+        } else {
+            coll.style.display = 'none';
+            
+        }
+    });
+    checkE.addEventListener('change', () => {
+        var coll = document.getElementById('collapsible5');
+        if (checkE.checked) {
+            coll.style.display = 'grid';
+            
+        } else {
+            coll.style.display = 'none';
+            
+        }
+    });
+    checkF.addEventListener('change', () => {
+        var coll = document.getElementById('collapsible6');
+        if (checkF.checked) {
+            coll.style.display = 'grid';
+
+        } else {
+            coll.style.display = 'none';
+            
         }
     });
 }

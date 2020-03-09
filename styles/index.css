@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
 
 .head {
-    padding-top: 60px;
     height: 100%;
 }
 
@@ -10,14 +9,14 @@
     height: 100%;
     display: flex;
     flex-direction: row;
-    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+    background-image: linear-gradient(-45deg, #434343 0%, black 100%);
     /*background: url('../image/main-background.svg');*/
     background-attachment: fixed;
 }
 
 .web-title {
     margin: 7%;
-    margin-top: 3%;
+    margin-top: 10%;
     display: inline-block;
     /*background-color: white;*/
     /*box-shadow: 0px 0px 2px rgba(0,0,0,.3);*/
@@ -41,7 +40,6 @@
     font-family: 'Julius Sans One';
     font-style: italic;
     line-height: 1.5em;
-    padding-top: 2em;
     font-size: 2.2em;
     color: white;
     text-align: center;
@@ -123,6 +121,9 @@ hr {
 }
 
 @media screen and (max-width: 1000px) {
+    header nav {
+        background-color: black;
+    }
     .head-container {
         flex-direction: column;
     }
@@ -136,7 +137,7 @@ hr {
 
     .head {
         padding-top: 0;
-        height: 200%;
+        height: 140%;
     }
 
     .slider-main {
