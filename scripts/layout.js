@@ -95,10 +95,8 @@ if (vibcon == true) {
         var coll = document.getElementById('collapsible6');
         if (checkF.checked) {
             coll.style.display = 'block';
-
         } else {
             coll.style.display = 'none';
-            
         }
     });
 }
@@ -163,6 +161,14 @@ if (event == true) {
         } else {
             coll.style.display = 'none';
             
+        }
+    });
+    checkG.addEventListener('change', () => {
+        var coll = document.getElementById('collapsible7');
+        if (checkG.checked) {
+            coll.style.display = 'grid';
+        } else {
+            coll.style.display = 'none';
         }
     });
 }
