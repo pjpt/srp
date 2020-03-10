@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+
+body {
+    background-color:#fdfdfd;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.container {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.links {
+    background-color: white;
+    box-shadow: 1px 1px 5px #aaa;
+    border-radius: 5px;
+    padding: 20px;
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 500px;
+}
+
+p {
+    font-size: .7em;
+    color: red;
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #aaa;
+    border-radius: inherit;
+    font-size: 1.2em;
+    padding: 15px;
+    width: 40%;
+    text-align: center;
+    display: inline-block;
+    background: inherit;
+    text-transform: uppercase;
+}
+
+.links a:hover {
+    background-color: #aea;
+}
+
+.form-email {
+    margin-top: 10px;
+}
+
+.form-email input {
+    display: block;
+    font-size: 1.1em;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-indent: 10px;
+    outline: none;
+}
+
+.form-email input:focus {
+    border-color: #eef;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.form-submit {
+    margin: 10px 0;
+    background: white;
+}
+
+.form-submit input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 1.2em;
+    background: #eee;
+}
+
+.form-name {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-firstname, .form-lastname {
+    display: inline-block;
+}
+
+.form-firstname {
+    margin-right: 10px;
+}
+
+.form-firstname input, .form-lastname input {
+    display: block;
+    font-size: 1.1em;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-indent: 10px;
+    outline: none;
+}
+
+.form-otp input {
+    display: block;
+    font-size: 1.1em;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    outline: none;
+    letter-spacing: 20px;
+    text-align: center;
+}
+
+.tickets {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.box {
+    margin: 20px;
+    background: white;
+    box-shadow: 1px 1px 10px #bbb;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.inner-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box h2 {
+    margin: 0;
+}
+.box h3 {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.form-select select {
+    width: 100%;
+    border: 1px solid black;
+    background: inherit;
+    font-size: inherit;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.links h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 870px) {
+    .tickets {
+        width: 90%;
+    }
+
+    .box {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .links {
+        width: 85%;
+    }
+}
+
+header {
+    background: #efeeff;
+    padding: 10px;
+}
+
+header h4 {
+    display: inline-block;
+    margin: 0;
+    line-height: 2em;
+    margin-left: 20px;
+}
+
+header a {
+    text-decoration: none;
+    float: right;
+    line-height: 2em;
+    margin-right: 20px;
+}
+
+.razorpay-payment-button {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 1.2em;
+    background: #43A047;
+}
+
+.form-submit-bad input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 1.2em;
+    background: #e53935;
+}
+
+#group_detail {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid;
+    text-align: center;
+}
+table tr {
+    font-size: 1em;
+}
