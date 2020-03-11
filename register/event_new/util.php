@@ -272,8 +272,8 @@
 	    $mail->Password = EMAIL_PASS;
 	    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 	    $mail->Port = 587;
-	    $mail->setFrom('kartikprajapati789@gmail.com', 'Mailer');
-		$mail->addAddress($email, 'kartik prajapati');
+	    $mail->setFrom('', 'Mailer');
+		$mail->addAddress($email, '');
 		$mail->isHTML(true);
 		$mail->Subject = 'OTP';
 		$otp = gen_otp();

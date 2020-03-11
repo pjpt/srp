@@ -1,7 +1,0 @@
-{
-    "require": {
-        "phpmailer/phpmailer": "^6.1",
-        "razorpay/razorpay": "2.*",
-        "google/apiclient": "^2.0"
-    }
-}

@@ -1,17 +1,17 @@
 <?php
 
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'k');
+define('DB_SERVER', '');
+define('DB_USERNAME', '');
 define('DB_PASSWORD', '');
-define('DB_NAME', 'event_web');
+define('DB_NAME', '');
 
-define('EMAIL', 'kartikprajapati789@gmail.com');
-define('EMAIL_PASS', 'yb#198643');
+define('EMAIL', '');
+define('EMAIL_PASS', '');
 
 $db = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
-$keyId = 'rzp_test_y8cFNdKazRzV7i';
-$keySecret = 'QJh1TxR7DsJPzTVXnWlPLetT';
+$keyId = '';
+$keySecret = '';
 $displayCurrency = 'INR';
 
 //These should be commented out in production
