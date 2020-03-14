@@ -74,7 +74,7 @@
 }
 
 .image {
-    height: 65%;
+    width: 65%;
     box-shadow: 0 0 50px rgba(209, 179, 255, .3), 0 0 10px rgba(255, 255, 255, .3);
 }
 
@@ -99,6 +99,6 @@
     }
 
     .image {
-        height: 40%;
+        width: 100%;
     }
 }

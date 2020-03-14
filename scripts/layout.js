@@ -25,7 +25,7 @@ $(window).scroll(function() {
 
 if (main == true) {
     var desc = document.getElementById('desc');
-    var line = "Borrowing its vibrance from the greatest depths of human imagination, the VIBRANT threatens to captivate anyone lay eyes upon it. From the darkest pit of hellish horrors to the dearthless bounties of the high heavens, join us as we unveil it all in our fest.";
+    var line = "Borrowing its vibrance from the greatest depths of human imagination, the VIBRANT threatens to captivate anyone lay their eyes upon it. From the darkest pit of hellish horrors to the dearthless bounties of the high heavens, join us as we unveil it all in our fest.";
     var word_list = line.split(' ');
 
     var time = .5;
