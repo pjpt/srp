@@ -40,6 +40,20 @@ if (main == true) {
     }
 }
 
+function change_check(check_id) {
+    check_id.checked = !check_id.checked;
+    var icon = check_id.nextSibling;
+    if (icon.innerText === '+') {
+        icon.innerText = '−';
+    } else {
+        icon.innerText = '+';
+    }
+    var event = document.createEvent("HTMLEvents");
+    event.initEvent("change", true, true);
+    event.eventName = "change";
+    check_id.dispatchEvent(event);
+}
+
 if (vibcon == true) {
     checkA.addEventListener('change', () => {
         var coll = document.getElementById('collapsible1');
@@ -103,7 +117,6 @@ if (vibcon == true) {
 
 if (event == true) {
     checkA.addEventListener('change', () => {
-        console.log('hi');
         var coll = document.getElementById('collapsible1');
         if (checkA.checked) {
             coll.style.display = 'grid';

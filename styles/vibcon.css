@@ -27,6 +27,7 @@ body {
 
 .category {
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .plus_button {

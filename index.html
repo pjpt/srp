@@ -5,12 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/animate.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
     <body>
-        <header>
+        <header class="wow slideInDown">
             <nav>
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
@@ -28,7 +29,7 @@
             </nav>
         </header>
         <main>
-            <section class="head">
+            <section class="head wow fadeIn">
                 <div class="head-container">
                     <div class="web-title fade-in">
                         <img src="image/main-logo.png" width="100%">
@@ -38,23 +39,23 @@
                     </div>
                 </div>
             </section>
-            <center><hr></center>
-            <section class="about">
+            
+            <section class="about wow fadeIn" data-wow-delay=".5s" data-wow-duration="2s">
                 <center>
                     <img class="theme_img" src="image/front_img.jpg">
                 <center>
             </section>
-            <center><hr></center>
+            <center class="wow fadeInLeft"><hr></center>
             <section class="about">
-                <div class="para" style="margin: 0 auto; font-size: 1.5em; text-align: center; ">
-                    <img class="theme_img" src="image/vibcon.jpg">
+                <div class="para wow fadeInRight" style="margin: 0 auto; font-size: 1.5em; text-align: center; ">
+                    <img width="50%" src="image/vibcon.jpg">
                 </div>
-                <div class="semi-head">
+                <div class="semi-head wow fadeInUp">
                     <h3><a href="tab5/tab5.html">&nbsp;&nbsp;View More&nbsp;&nbsp;</a></h3>
                 </div>
             </section>
-            <center><hr></center>
-            <section class="about" style="margin-bottom: 80px;">
+            <center class="wow fadeInLeft"><hr></center>
+            <section class="about wow fadeInUp" style="margin-bottom: 80px;">
                 <div class="semi-head">
                     <h1>About Us</h1>
                 </div>
@@ -64,7 +65,7 @@
                         the field of medicine both in India and abroad and continues to do so.</p>
                 </div>
             </section>
-            <center><hr></center>
+            <center class="wow fadeInRight"><hr></center>
             <h1>&nbsp;</h1>
             <!--
             <section style="height: 500px;">
@@ -126,11 +127,14 @@
             <p><center>©vibrant2020 <a href="https://docs.google.com/document/d/e/2PACX-1vRinnwpWTBgpwfTzvq2s0Sm6qbVfDnNbqdKr9CZvB1WEbVH2FZYranFIowktOl_fTC6L8l8WogeIaWO/pub">Terms & Condition&nbsp;</a> <a href="https://docs.google.com/document/d/e/2PACX-1vQQsnQyW2e24DcX_MH9kqXZg_15rtpe5F8QwfT6B-s2cdZPMe1FVVKE_KQ27XHCiqFmXb3e560NYA2t/pub">Privacy Policy</a></center></p>
             <p>&nbsp;</p>
         </footer>
-        <div><center>Devloper: kartikprajapati987@gmail.com</center></div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
         <script>var main = true; var vibcon = false; event = false;</script>
         <script src="scripts/layout.js"></script>
         <script src="scripts/index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>
