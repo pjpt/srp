@@ -49,6 +49,7 @@
 
 .box:hover .event-name {
     background: rgba(0, 0, 0 , .4);
+    backdrop-filter: blur(5px);
 }
 
 @media screen and (max-width: 680px) {
@@ -75,18 +76,26 @@
 }
 
 .time {
+    display: inline-block;
     font-weight: normal;
     margin-bottom: 20px;
-    color: #1967d2;
-    font-size: 1.5em;
+    color: #ffffff;
+    font-size: 1.7em;
+    background: #FEAC5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 1em;
+    font-weight: 700;
 }
 
 .dot {
     display: inline-block;
     background-color: lightblue;
     border-radius: 50%;
-    height: 15px;
-    width: 15px;
+    height: .7em;
+    width: .7em;
     margin-right: .5rem;
 }
 
@@ -197,7 +206,7 @@
     }
 
     .time {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
     .list h2 {
@@ -213,6 +222,6 @@
     }
 
     .event-head h1 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 }

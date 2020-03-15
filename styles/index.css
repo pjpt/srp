@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
 
 .head {
-    height: 101%;
+    padding-bottom: 100px;
+    background-image: linear-gradient(-45deg, #434343 0%, black 100%);
 }
 
 .head-container {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
-    background-image: linear-gradient(-45deg, #434343 0%, black 100%);
     /*background: url('../image/main-background.svg');*/
     background-attachment: fixed;
 }
@@ -143,7 +142,6 @@ hr {
 
     .head {
         padding-top: 0;
-        height: calc(100% + 18em);
     }
 
     .theme_img {
@@ -174,4 +172,14 @@ hr {
 
 .fade-in {
     animation: fade-in 1s forwards linear;
+}
+
+.date {
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 3em;
+    border-radius: 7px;
+    background: #FEAC5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

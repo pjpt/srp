@@ -73,3 +73,8 @@ body {
     font-size: 1.2em;
 }
 
+.workshop {
+    margin-bottom: .7em;
+    padding-bottom: .5em;
+    border-bottom: 2px solid greenyellow;
+}

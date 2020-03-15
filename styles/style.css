@@ -170,11 +170,32 @@ footer {
     background: transparent;
 }
 
+.header_big {
+    line-height: 80px;
+}
+
+.header_small {
+    line-height: 60px;
+}
+
 @media screen and (max-width: 1000px) {
     header {
         position: sticky;
+        line-height: 50px;
     }
     
+    .checkbtn {
+        margin-top: 10px;
+    }
+
+    .header_big {
+        line-height: 50px;
+    }
+
+    .header_small {
+        line-height: 30px;
+    }
+
     .ticket-button {
         background: black;
         color: #2962FF;
@@ -201,7 +222,7 @@ footer {
         width: 100%;
         height: 100vh;
         background: black;
-        top: 80px;
+        top: 50px;
         left: 0;
         text-align: center;
         left: 100%;
@@ -218,6 +239,7 @@ footer {
     header nav ul li a {
         font-size: 20px;
     }
+    
     a:hover, a.active{
         background: none;
         color: #666666;

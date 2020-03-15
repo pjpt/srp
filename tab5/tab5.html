@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../styles/event.css">
         <link rel="stylesheet" href="../styles/shedule.css">
         <link rel="stylesheet" href="../styles/vibcon.css">
+        <link rel="stylesheet" href="../styles/animate.css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
     <body>
@@ -29,48 +30,75 @@
         </header>
         <main>
             <section class="event-head">
-                <h1>VIBCON</h1>
-                <h3 class="time"><span class="dot"></span>Apr 20, 2020 &nbsp;&nbsp;<em>to</em> &nbsp;&nbsp;Apr 21, 2020</h3>
-                <div class="content">
+                <p>&nbsp;</p>
+                <h1><img class="wow fadeIn" src="../image/vibcon_head.jpg" width="50%"></h1>
+                <h3 class="time wow fadeInLeft" data-wow-delay=".2s"><span class="dot"></span>Apr 20, 2020 &nbsp;&nbsp;<em>to</em> &nbsp;&nbsp;Apr 21, 2020</h3>
+                <p>&nbsp;</p>
+                <div class="content wow fadeIn" data-wow-delay=".6s">
                     <p>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The last few years have seen the emergence and growth of undergraduate medical conferences in several medical colleges across the country. What was once thought to be an event for consultants and PG students, has now gained immense popularity among students of MBBS.
                     </p>
                     <p>&nbsp;</p>
                     <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Medical conferences allow undergraduates to go a step further from their routine academics and get a glimpse of the practical applications and implications of what they learn in books. Workshops, keynote speeches, quiz, symposium, case and paper presentation are the events that are generally present at UG medical conferences. Workshops and drills equip students with hands-on experience in essential clinical skills whereas research presentation opens their minds to question already acquired knowledge. Events such as the medical symposium give students a unique platform to integrate research, problem solving and creativity. All in all, these events help broaden the students' horizons and give them a fresh perspective on medicine.
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Medical conferences allow undergraduates to go a step further from their routine academics and get a glimpse of the practical applications and implications of what they learn in books. Workshops and drills equip students with hands-on experience in essential clinical skills whereas research presentation opens their minds to question already acquired knowledge. Events such as the medical symposium give students a unique platform to integrate research, problem solving and creativity. All in all, these events help broaden the students' horizons and give them a fresh perspective on medicine.
                     </p>
                     <p>&nbsp;</p>
                     <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keeping this in mind, we, a team of students from Aakriti Chopra Batch (second first MBBS), would like to organise a 2 day long medical conference for undergraduate students at our college. Having participated in such conferences ourselves, we would like the students of our college to get an exposure to events of this kind and make our college a hub of such academic activities.
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Keeping this in mind, we bring to you a 2-day long undergraduate academic congress, the first of its kind in the history of Medical College, Baroda. The first edition of VIBCON Transcendence, the pre-Vibrant UG medical conference, will have a plethora of events and activities, all of which will be aimed at enriching the the participants by taking a step beyond the routine MBBS curriculum. 
                     </p>
                 </div>
             </section>
             <section class="sec" style="margin-bottom: 0; padding-top: 0;">
-                <h1>Events</h1>
-                <h2 class="category" onclick="change_check(checkA)">Workshops<input type="checkbox" id="checkA" style="display: none;"><label class="plus_button">+</label></h2>
+                <h1 class="wow fadeInLeft">Events</h1>
+                <h2 class="category wow fadeIn" onclick="change_check(checkA)">Workshops<input type="checkbox" id="checkA" style="display: none;"><label class="plus_button">+</label></h2>
                 <div id="collapsible1">
                     <p>
                         Workshops will be aimed at engaging students in interactive learning sessions; providing the most up-to-date information and strategies; and developing or enhancing skills that they may apply in clinical practice, research, or teaching.
                     </p>
                     <ul>
-                        <p><b>Workshops Category A</b></p>
-                        <li>Basic Surgical Skills</li>
-                        <li>Stroke Mangement</li>
+                        <h2 class="workshop"><b>Workshops Category A</b></h2>
+                        <div class="events-container">
+                            <div class="box" style="background-image: url(../image/event/surgical.jpg);">
+                                <div class="event-name">
+                                    <h2>Basic Surgical Skills</h2>
+                                </div>
+                            </div>
+                            <div class="box" style="background-image: url(../image/event/stroke.jpg);">
+                                <div class="event-name">
+                                    <h2>Stroke</h2>
+                                </div>
+                            </div>
+                        </div>
                         <p>&nbsp;</p>
-                        <p><b>Workshops Category B</b></p>
-                        <li>ECG Interpretation and red flag signs</li>
-                        <li>Basics of oncology - examination of common malignancies</li>
-                        <li>basics of radiology</li>
+                        <h2 class="workshop"><b>Workshops Category B</b></h2>
+                        <div class="events-container">
+                            <div class="box" style="background-image: url(../image/event/ecg.jpg);">
+                                <div class="event-name">
+                                    <h2>ECG</h2>
+                                </div>
+                            </div>
+                            <div class="box" style="background-image: url(../image/event/oncology.jpg);">
+                                <div class="event-name">
+                                    <h2>Oncology</h2>
+                                </div>
+                            </div>
+                            <div class="box" style="background-image: url(../image/event/radiology.jpg);">
+                                <div class="event-name">
+                                    <h2>Radiology</h2>
+                                </div>
+                            </div>
+                        </div>
                     </ul>
                 </div>
-                <h2 class="category" onclick="change_check(checkB)">Keynote Speakers/CMEs<input type="checkbox" id="checkB" style="display: none;"><label class="plus_button">+</label></h2>
+                <h2 class="category wow fadeIn" onclick="change_check(checkB)">Orations<input type="checkbox" id="checkB" style="display: none;"><label class="plus_button">+</label></h2>
                 <div id="collapsible2">
                     <p>
                         Eminent doctors will be invited to share their knowledge, experiences and new developments in the field of medicine.
                     </p>
                 </div>
-                <h2 class="category" onclick="change_check(checkC)">Quiz<input type="checkbox" id="checkC" style="display: none;"><label class="plus_button">+</label></h2>
+                <h2 class="category wow fadeIn" onclick="change_check(checkC)">Quiz-picable<input type="checkbox" id="checkC" style="display: none;"><label class="plus_button">+</label></h2>
                 <div id="collapsible3">
+                    <center><img src="../image/event/quiz.jpg" width="50%"></center>
                     <p>
                         The pre-and paraclinical quiz
                     </p>
@@ -97,7 +125,7 @@
                         <li>Runner’s up</li>
                     </ul>
                 </div>
-                <h2 class="category" onclick="change_check(checkD)">Poster Presentation<input type="checkbox" id="checkD" style="display: none;"><label class="plus_button">+</label></h2>
+                <h2 class="category wow fadeIn" onclick="change_check(checkD)">Serendipity<input type="checkbox" id="checkD" style="display: none;"><label class="plus_button">+</label></h2>
                 <div id="collapsible4">
                     <center><p><i><q>Being a student is easy. Learning requires actual work.</q> — William Crawford</i></p></center>
                     <p>&nbsp;</p>
@@ -144,13 +172,14 @@
                         <li>The abstracts will be screened and selected posters will be presented on the day of the event.</li>
                     </ul>
                 </div>
-                <h2 class="category" onclick="change_check(checkE)">Case Presentation<input type="checkbox" id="checkE" style="display: none;"><label class="plus_button">+</label></h2>
+                <h2 class="category wow fadeIn" onclick="change_check(checkE)">Ubuntu<input type="checkbox" id="checkE" style="display: none;"><label class="plus_button">+</label></h2>
                 <div id="collapsible5">
                     <center><p><i><q>All maladies have tales to tell.</q></i></p></center>
                     <p>&nbsp;</p>
-                    <p>
-                        This event gives the participants chance to present intriguing and unique cases, that appeals to and gives new information to all the future doctors.
-                    </p>
+                    <center><img src="../image/event/ubuntu.jpg" width="50%"></center>
+                    <p>&nbsp;</p>
+                    <p>This event gives the participants chance to present intriguing and unique cases, that appeals to and gives new information to all the future doctors.</p>
+                    <p>Put your clinical acumen to the test in the Ubuntu Case Presentation Competition! Because sometimes you win and sometimes you learn.</p>
                     <p>&nbsp;</p>
                     <h3>Rules and regulations</h3>
                     <ul>
@@ -158,23 +187,21 @@
                         <li>This competition is only for UG students and interns.</li>
                         <li>The presentation should comprise of only the relevant positive and negative findings in history, vital parameters on examination, general and systemic examination findings, differential diagnoses proposed, laboratory/special investigations, final diagnosis, therapeutic/surgical interventions made, their outcomes and finally a summary of all the above.</li>
                         <li>Presentation time of 4 minutes shall be allotted, followed by Question and Answer round by the judges.</li>
+                        <li>Participants need to send an abstract of their case report before 4th April 2020 to casepresentation.transcendencebmc@gmail.com. Abstracts will be screened and the list of selected participants for the final presentation will be declared by the second week of April'20.</li>
                         <li>The presentation should be strictly in MS Office 2010 or higher versions.</li>
                         <li>The abstract shall be in the following format with a maximum of 1000 words:</li>
-                        <ul style="margin-left: 2em; margin-top: 1em;">
-                            <li>Title</li>
-                            <li>Brief history</li>
-                            <li>Diagnosis</li>
-                        </ul>
+                        <li>The abstract should not exceed 500 words. The contents of the abstract should be under the headings: Title, Introduction, Case Report, Discussion.</li>
                         <li>Judging will be based on choice of case, clarity of thought, conciseness, subject knowledge and confidence.</li>
                         <li>The judges’ verdict shall be binding.</li>
+                        <li>Abstract Submission Fees: Rs.100/-</li>
                     </ul>
                 </div>
-                <h2 class="category" onclick="change_check(checkF)">Medical Symposium<input type="checkbox" id="checkF" style="display: none;"><label class="plus_button">+</label></h2>
+                <h2 class="category wow fadeIn" onclick="change_check(checkF)">Meraki<input type="checkbox" id="checkF" style="display: none;"><label class="plus_button">+</label></h2>
                 <div id="collapsible6">
+                    <center><img src="../image/event/meraki.jpg" width="50%"></center>
                     <p>&nbsp;</p>
-                    <p>
-                        The Medical Symposium is a unique platform for students to showcase their knowledge, inquisitive thinking, problem solving skills and creativity on a medical topic of social relevance. It is a team event wherein a team of undergraduate students presents their topic, shares results of research on that topic and concludes by suggesting ways to improve the current scenario. All this is summed up in a crisp and dynamic narrated presentation.
-                    </p>
+                    <p>The Medical Symposium is a unique platform for students to showcase their knowledge, inquisitive thinking, problem solving skills and creativity on a medical topic of social relevance. It is a team event wherein a team of undergraduate students presents their topic, shares results of research on that topic and concludes by suggesting ways to improve the current scenario. All this is summed up in a crisp and dynamic narrated presentation.</p>
+                    <p>The participating team first identifies a medical problem/issue of social relevance in the society today, which is followed by comprehensive research to understand the problem at the grassroots level. After a thorough analysis of the issue at hand, the team brainstorms and comes up with means to tackle the problem. Backed by statistical evidence, the team presents its work in the form of a PowerPoint presentation with live narration. The presentation is followed by a question answer session.</p>
                     <p>&nbsp;</p>
                     <h3>Rules and regulations</h3>
                     <ul>
@@ -215,13 +242,11 @@
                             <li>Overall coherence and message of symposium</li>
                         </ul>
                     </ul>
-                    <h3>
-                        Maximum number of Entries: 8
-                    </h3>
                     <h3>Prizes</h3>
                     <ul>
                         <li>Best Symposium: First Prize</li>
                         <li>Best Speaker</li>
+                        <li>Cash prizes worth Rs. 5000!</li>
                     </ul>
                     <h3>Venue</h3>
                     <ul>
@@ -359,8 +384,8 @@
                                 <a href="https://www.instagram.com/vibrant_2020/">
                                     <i href="#" class="fab fa-instagram"></i>
                                 </a>
-                                <a href="#">
-                                    <i href="#" class="fab fa-youtube"></i>
+                                <a href="https://www.instagram.com/transcendence_bmc/?igshid=jb411a034nr4">
+                                    <i href="#" class="fab fa-instagram"></i>
                                 </a>
                             </div>
                         </li>
@@ -372,5 +397,9 @@
         <script>var vibcon = true; var main = false; event = false;</script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="../scripts/layout.js"></script>
         <script src="../scripts/layout.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>
