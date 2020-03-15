@@ -210,9 +210,11 @@ footer {
     }
 
     label.logo {
-        font-size: 1.5em;
+        font-size: 1.6em;
         padding-left: 30px;
+        padding-right: 10px;
     }
+    
     .checkbtn {
         display: block;
     }
