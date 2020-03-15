@@ -47,6 +47,10 @@ body {
     margin: 2em;
 }
 
+.vib_img {
+    width: 50%;
+}
+
 @media screen and (max-width: 1000px) {
     .content ul, .sec ul {
         margin: 0;
@@ -59,6 +63,10 @@ body {
     
     .category {
         font-size: 1.3em;
+    }
+
+    .vib_img {
+        width: 90%;
     }
 }
 

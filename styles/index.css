@@ -125,10 +125,22 @@ hr {
     width: 100%;
 }
 
+.date {
+    margin-top: 1em;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 3em;
+    border-radius: 7px;
+    background: #FEAC5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 @media screen and (max-width: 1000px) {
     header nav {
         background-color: black;
     }
+
     .head-container {
         flex-direction: column;
     }
@@ -136,7 +148,24 @@ hr {
     .web-title {
         margin: 0 auto;
     }
+
+    .web-title img {
+        padding: 30px 60px;
+        margin-top: 30px;
+    }
+
+    #slogan {
+        font-size: 2.2em;
+        margin-bottom: 1em;
+    }
+
     .web-title p {
+        font-size: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    .date {
+        width: 81%;
         font-size: 1.7em;
     }
 
@@ -145,7 +174,7 @@ hr {
     }
 
     .theme_img {
-        width: 95%;
+        width: 100%;
     }
 
     .slider-main {
@@ -174,12 +203,3 @@ hr {
     animation: fade-in 1s forwards linear;
 }
 
-.date {
-    display: inline-block;
-    padding: 5px 20px;
-    font-size: 3em;
-    border-radius: 7px;
-    background: #FEAC5E;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
