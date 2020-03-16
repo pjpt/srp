@@ -68,6 +68,12 @@ body {
     .vib_img {
         width: 90%;
     }
+
+    .events-container {
+        grid-gap: 70px;
+        width: 70%;
+        justify-content: ;
+    }
 }
 
 .content ul li, .sec ul li {
@@ -85,4 +91,9 @@ body {
     margin-bottom: .7em;
     padding-bottom: .5em;
     border-bottom: 2px solid greenyellow;
+}
+
+.event-name h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0 0 20px rgba(0, 0, 0, .8);
 }

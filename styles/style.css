@@ -44,6 +44,14 @@ header nav {
     width: 100%;
 }
 
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
 label.logo{
     color: white;
     font-size: 35px;
@@ -108,7 +116,7 @@ footer {
 .contact h2 {
     display: inline-block;
     margin-bottom: 20px;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid white;
 }
 
 .contact ul {
@@ -179,6 +187,10 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
+    body {
+        overflow-x:hidden;
+    }
+
     header {
         position: sticky;
         line-height: 50px;
@@ -214,7 +226,7 @@ footer {
         padding-left: 30px;
         padding-right: 10px;
     }
-    
+
     .checkbtn {
         display: block;
     }
