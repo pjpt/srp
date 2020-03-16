@@ -34,7 +34,9 @@ body {
     float: right;
     cursor: pointer;
     padding-right: .5em;
-    font-size: 1.3em;
+    font-size: inherit;
+    font-weight: bold;
+    padding-right: 20px;
 }
 
 .content p {
@@ -71,8 +73,7 @@ body {
 
     .events-container {
         grid-gap: 70px;
-        width: 70%;
-        justify-content: ;
+        width: 100%;
     }
 }
 
