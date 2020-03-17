@@ -3,7 +3,7 @@ check.addEventListener('change', () => {
     var main = document.getElementsByTagName('main')[0];
     if (check.checked == true) {
         header.className = "fix";
-        main.style.paddingTop = "50px"
+        main.style.paddingTop = "60px"
     } else {
         header.className = '';
         main.style.paddingTop = "0px";
