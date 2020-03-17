@@ -103,7 +103,8 @@ header a.active, header a:hover {
 }
 
 footer {
-    background: #333;
+    background: #222;
+    filter: opacity(0.6);
 }
 
 .footer-logo {
@@ -115,8 +116,6 @@ footer {
 
 .contact h2 {
     display: inline-block;
-    margin-bottom: 20px;
-    border-bottom: 2px solid white;
 }
 
 .contact ul {
@@ -128,6 +127,7 @@ footer {
 }
 
 .value {
+    font-family: sans-serif;
     display: inline-block;
     font-weight: lighter;
     padding-left: 10px;
@@ -135,15 +135,22 @@ footer {
 .tag {
     float: left;
     display: inline-block;
-    text-align: right;
+    text-align: left;
+}
+
+.fa, .fas {
+    width: 1em;
+    padding-top: .2em;
+    font-size: 1.2em;
 }
 
 .social-media {
-    font-size: 2em;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5em;
 }
 
 .social-media a {
-    margin-left: 30px;
     display: inline-block;
     color: black;
 }
